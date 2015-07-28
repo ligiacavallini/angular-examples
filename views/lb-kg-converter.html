@@ -1,0 +1,17 @@
+<div class="content mdl-grid" ng-controller='lbkgController'>
+	<div class="mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+		<h3>{{ title }}</h3>
+		<div class="container" >
+			<div>  
+				<h4>lb - kg</h4>
+				<input name="lb" placeholder="lb" type="number" ng-model="lb" ng-keyup="calculaKg($event)"  />  
+				<input name="kg" placeholder="kg" type="number" ng-model="kg" ng-keyup="calculaLb($event)" value="{{ kg }}" />
+			</div>
+			<div>	
+				<h4>oz - gramas</h4>
+				<input name="oz" placeholder="oz" type="number" ng-model="oz" ng-keyup="calculaG($event)"  />  
+				<input name="g" placeholder="g" type="number" ng-model="g" ng-keyup="calculaOz($event)" value="{{ g }}" />
+			</div>
+		</div>
+	</div>
+</div>

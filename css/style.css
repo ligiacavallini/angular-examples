@@ -1,0 +1,46 @@
+.content{
+	padding:30px 8%;
+	margin:0 auto;
+}
+.container{
+	padding: 20px;
+	background: #FFF;
+	overflow: auto;
+}
+
+.item-repeated{
+	color:#999;
+	font-size:18px;
+	padding:10px; 
+	margin:2px;
+	float:left;
+	background:#f6f6f6
+}
+
+.item-repeated.ng-enter, .item-repeated.ng-move{
+	opacity:0;
+	-webkit-animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	-o-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+
+
+.item-repeated.ng-leave
+{ 
+	color:#000;
+    -webkit-animation: fadeOut 500ms;
+	-moz-animation: fadeOut 500ms;
+	-o-animation: fadeOut 500ms;
+	animation: fadeOut 500ms;
+} 
+
+input{
+	height:30px;
+	margin:2px;
+}
+
+
+
+ 

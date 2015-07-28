@@ -1,0 +1,22 @@
+<div class="content mdl-grid" ng-controller='listController'>
+		<div class="mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+			<h3>List example</h3>
+			<p class="mdl-color-text--grey-500">
+			  That's an example of a list with filter and some fuctions. I'm using AngularJs combined with CSS3. This "layout" is counting with the support of Material Design Lite.<br>
+			  There are {{fruits.length}} fruits on this list.<br>
+			   {{ (searchText ? 'Searching for '+ searchText : '&nbsp;') }}
+			</p>
+			<div class="container" >
+				<p>
+					<input  type="text" ng-model="searchText" placeholder="Start typing to filter..."/>
+				</p>
+				<div class="item-repeated" ng-repeat="fruit in fruits | filter: searchText">
+					{{ fruit }} 
+					<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" ng-click="delete($index)">
+						<i class="material-icons">delete</i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
